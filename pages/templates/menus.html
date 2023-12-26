@@ -1,0 +1,109 @@
+<div class="fater-logo">
+    AHU反方教务系统
+</div>
+
+{% if request.session.user.type == 0 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/colleges">
+            <span class="fa fa-diamond"></span> 学院信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/majors">
+            <span class="fa fa-github"></span> 专业信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/grades">
+            <span class="fa fa-viadeo-square"></span> 班级信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/projects">
+            <span class="fa fa-american-sign-language-interpreting"></span> 课程信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/students">
+            <span class="fa fa-apple" aria-hidden="true"></span> 学生信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/teachers">
+            <span class="fa fa-500px"></span> 教师信息管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-google"></span> 选课记录管理
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/testLocation">
+            <span class="fa fa-heart"></span> 考场信息管理
+        </a>
+    </div>
+</div>
+{% elif  request.session.user.type == 1 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/workPalns/">
+            <span class="fa fa-heart"></span> 我的上课安排
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-google"></span> 学生信息查询
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/ScoreAdd">
+            <span class="fa fa-500px"></span> 考试成绩添加
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/testLocation">
+            <span class="fa fa-american-sign-language-interpreting"></span> 监考信息查询
+        </a>
+    </div>
+</div>
+{% elif  request.session.user.type == 2 %}
+<div class="fater-menu-vertical">
+    <div class="fater-menu-item">
+        <a href="/projects/">
+            <span class="fa fa-home"></span> 系统首页
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/selectLogs">
+            <span class="fa fa-arrows"></span> 我的选课列表
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/students/projects">
+            <span class="fa fa-balance-scale"></span> 我的选课记录
+        </a>
+    </div>
+    <div class="fater-menu-item">
+        <a href="/projects/students/score">
+            <span class="fa fa-archive"></span> 已选课程成绩
+        </a>
+    </div>
+     <div class="fater-menu-item">
+        <a href="/projects/testLocation">
+            <span class="fa fa-archive"></span> 考场信息查询
+        </a>
+    </div>
+</div>
+{% endif %}

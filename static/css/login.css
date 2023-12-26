@@ -1,0 +1,86 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+*:focus {
+	outline: none;
+}
+html, body,
+.login-container {
+	/*background: url('./images/background.png') center center;*/
+	/*background-color: #409EFF;*/
+    /*background-image: linear-gradient(to right, #409EFF , #1fc8db);*/
+	/*height: 100%;*/
+	    background: url('./images/background.png') center center fixed; /* 用你的图片路径替换 'path/to/your/image.jpg' */
+    background-size: cover;
+    height: 100%;
+}
+
+.login-body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 280px;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.login-title {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #2f323b;
+	margin-top: 15px;
+	margin-bottom: 45px;
+}
+
+.login-form{
+	padding: 0 15px;
+}
+
+.fater-form-item {
+	margin-bottom: 25px;
+}
+.fater-form-block input[type='text'] {
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px;
+	height: 25px;
+	width: 350px;
+	margin-bottom: 25px;
+}
+.fater-form-block input[type='password'] {
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px;
+	height: 25px;
+	width: 350px;
+	margin-bottom: 25px;
+}
+
+.fater-btn{
+	padding: 10px 15px;
+	user-select: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.fater-btn-sm {
+	padding: 5px 5px;
+	font-size: 8px;
+}
+.fater-btn-block {
+	display: block;
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 10px 15px;
+}
+.fater-btn-primary{
+	background-color: #2f323b;
+	color: #FFFFFF;
+}
+.fater-btn-normal{
+	color: #333333;
+	background-color: #FFFFFF;
+	border-color: #CCCCCC;
+}

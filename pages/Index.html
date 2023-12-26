@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+{% include 'templates/head.html' %}
+<body>
+<div class="fater-layout-header">
+    {% include 'templates/nav.html' %}
+</div>
+
+<div class="fater-layout-menus">
+    {% include 'templates/menus.html' %}
+</div>
+
+<div class="fater-layout-body">
+    <blockquote class="fater-blockquote">
+        您好，欢迎使用反方教务系统
+    </blockquote>
+
+        <!-- 加载图床图片 -->
+    <div class="image-container" style="text-align: center;">
+        <img src="https://cdn.acwing.com/media/article/image/2023/12/19/234515_8e8ce4369e-ahu.jpg" alt="ahu">
+        <img src="https://cdn.acwing.com/media/article/image/2023/12/19/234515_8e8ce4369e-ahu.jpg" alt="ahu">
+
+
+    </div>
+
+    <div class="fater-panel">
+    <div class="fater-pannel-title">
+        安徽大学简介
+    </div>
+    <div class="fater-pannel-body">
+        <table class="fater-table">
+            <tbody>
+                <tr>
+                    <td>学校名称</td>
+                    <td>安徽大学</td>
+                </tr>
+                <tr>
+                    <td>创建时间</td>
+                    <td>1928年</td>
+                </tr>
+                <tr>
+                    <td>所在地</td>
+                    <td>中国 安徽省 合肥市</td>
+                </tr>
+                <tr>
+                    <td>学校类型</td>
+                    <td>综合性大学</td>
+                </tr>
+                <tr>
+                    <td>校训</td>
+                    <td>至诚至坚，博学笃行！</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <div class="fater-panel">
+        <div class="fater-pannel-title">
+            开发成员
+        </div>
+        <div class="fater-pannel-body">
+            <table class="fater-table">
+                <tbody>
+
+                <tr>
+                    <td>课程名称</td>
+                    <td>软件工程概论实验</td>
+                </tr>
+
+                <tr>
+                    <td>团队成员介绍</td>
+                    <td>王鸿炜 王帅 马晴川 高睿翀</td>
+                </tr>
+
+                <tr>
+                    <td>实验地点</td>
+                    <td>安徽大学磬苑校区笃行南楼A208 & 杏园2504 B</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+<div class="fater-layout-foot">
+    {% include 'templates/foot.html' %}
+</div>
+
+{% include 'templates/commjs.html' %}
+</body>
+</html>
